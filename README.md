@@ -10,7 +10,7 @@ GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R bas
 5. [NbClust: YAML-500 (2-20 clusters)](plots_nb_YAML_500_(2-20).md)
 6. [NbClust: YAML-500 (2-250 clusters)](plots_nb_YAML_500_(2-250).md)
 
-## II. LSA visualization (with related MDS and PCA plots)
+## II. LSA visualization
 1. [LSA_Visu](plots_LSA_Visu.md)
 
 

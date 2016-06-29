@@ -12,3 +12,5 @@ GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R bas
 
 ## II. LSA visualization (with related MDS and PCA plots)
 1. [LSA_Visu](plots_LSA_Visu.md)
+
+<img src="balder.png" width="900">

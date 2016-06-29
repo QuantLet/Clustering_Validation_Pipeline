@@ -13,4 +13,6 @@ GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R bas
 ## II. LSA visualization (with related MDS and PCA plots)
 1. [LSA_Visu](plots_LSA_Visu.md)
 
+
+## Screenshot from the RDC Linux Server showing the parallelization process of cluster validation on 32 CPU's :
 <img src="balder.png" width="900">

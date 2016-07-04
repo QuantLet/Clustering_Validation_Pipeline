@@ -1,0 +1,21 @@
+
+Name of QuantLet: lsa_heatmaperr
+
+Published in: 'GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach'
+
+Description: Plots heatmaps of the original matrix, the truncated matrix and the error matrix for the LSA model of YAML text corpus.
+
+Keywords: plot, graphical representation, data visualization, heat-map, text mining, svd, singular value
+
+See also: lsa_heatmapsvd, lsa_determineSign
+
+Author: Lukas Borke, Anastasia Stepanchenko
+
+Submitted: 04.07.2016 by Lukas Borke
+
+Datafiles: YAML_lsa.RData
+
+Example:
+- heatmap of the original matrix
+- heatmap of the truncated matrix
+- heatmap of the error matrix

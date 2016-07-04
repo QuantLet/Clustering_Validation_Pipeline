@@ -1,6 +1,7 @@
+
 Name of QuantLet: YAMLnumbchars
 
-Published in: GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach
+Published in: 'GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach'
 
 Description: Plots the number of char symbols of all different fields in YAML text corpus containing Quantnet metainfo.txt files.
 
@@ -10,6 +11,10 @@ See also: YAMLcleanmerge
 
 Author: Anastasia Stepanchenko
 
-Submitted: 
+Submitted: 04.07.2016 by Lukas Borke
 
 Datafiles: yamlQN.RData
+
+Example:
+- Number of char symbols of all different fields in a given document
+- Number of char symbols of all different fields in the dataset

@@ -1,9 +1,8 @@
-
-# clear variables and close windows
+# Clear variables and close windows
 rm(list = ls(all = TRUE))
 graphics.off()
 
-# install and load packages
+# Install and load packages
 libraries = c("ggplot2")
 lapply(libraries, function(x) if (!(x %in% installed.packages())) {
 install.packages(x)
@@ -14,7 +13,7 @@ lapply(libraries, library, quietly = TRUE, character.only = TRUE)
 options(stringsAsFactors=FALSE)
 obj.names  = load("yamlQN.RData", .GlobalEnv)
 
-# remove empty fields
+# Remove empty fields
 yaml.removeNulls = function(yaml_dset) {
   yaml_dset_clean = yaml_dset
   for (i in 1:length(yaml_dset)){
@@ -22,7 +21,7 @@ yaml.removeNulls = function(yaml_dset) {
     for (j in 1:length(yaml_dset[[i]]))
     {
       if(is.null(yaml_dset[[i]][[j]])) {
-        ind_remove = c(ind_remove,j)}
+        ind_remove = c(ind_remove, j)}
     }
     for (m in sort(ind_remove, decreasing = TRUE)){ 
       yaml_dset_clean[[i]][m]  = NULL
@@ -33,8 +32,7 @@ yaml.removeNulls = function(yaml_dset) {
 
 corpus = yaml.removeNulls(yaml_list)
 
-# merge fields, only those in fields_standard are left: 
-
+# Merge fields, only those in fields_standard are left: 
 yaml.mergeFields = function(yaml_dset, fields_to_merge, fields_standard) {
   yaml_dset_merged = yaml_dset
   for (i in 1:length(yaml_dset)){
@@ -44,8 +42,8 @@ yaml.mergeFields = function(yaml_dset, fields_to_merge, fields_standard) {
       for (k in 1:length(fields_to_merge)){
         if (field_names[j] %in% fields_to_merge[[k]]){
           if (fields_standard[k] %in% field_names){
-            app_to  = which(field_names %in% fields_standard[k])
-            yaml_dset_merged[[i]][[app_to]] = paste(yaml_dset_merged[[i]][[app_to]],", ",yaml_dset_merged[[i]][[j]], sep="")
+            app_to     = which(field_names %in% fields_standard[k])
+            yaml_dset_merged[[i]][[app_to]] = paste(yaml_dset_merged[[i]][[app_to]], ", ", yaml_dset_merged[[i]][[j]], sep = "")
             ind_remove = c(ind_remove,j)}
           else{names(yaml_dset_merged[[i]])[j] = fields_standard[k]}}
       }
@@ -57,13 +55,14 @@ yaml.mergeFields = function(yaml_dset, fields_to_merge, fields_standard) {
   return(yaml_dset_merged)
 }
 
+
 fields_to_merge = list(c("Author [New]", "Author[Update]"), c("Datafiles", "Datafile[example]"), 
                          c("Keywords[new]"), c("Name of QuantLet"), c("Subfunctions"))
 fields_standard = c("Author", "Datafile", "Keywords", "Name of Quantlet", "Subfunction")
   
 corpus = yaml.mergeFields(corpus, fields_to_merge, fields_standard)
 
-# number of occurrences of all different fields
+# Number of occurrences of all different fields
 yaml.FieldNumDocs = function(yaml_dset) {
   field_names = c()
   field_ndocs = c()
@@ -84,7 +83,7 @@ yaml.FieldNumDocs = function(yaml_dset) {
   return (Field_nDocs)
 }
 
-# plot
+# Plot
 yaml.plotFieldNumDocs = function(yaml_dset) {
   Field_nDocs = yaml.FieldNumDocs(yaml_dset)
   Field_nDocs = transform(Field_nDocs, fields = factor(fields, levels = Field_nDocs$fields))

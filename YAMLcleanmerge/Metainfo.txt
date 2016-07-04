@@ -1,8 +1,10 @@
+
 Name of QuantLet: YAMLcleanmerge
 
-Published in: GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach
+Published in: 'GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach'
 
-Description: Cleanes YAML text corpus containing Quantnet metainfo.txt files from empty fields, merges similar fields and plots the number of documents, containing each field.
+Description: 'Cleanes YAML text corpus containing Quantnet metainfo.txt files from empty fields, 
+merges similar fields and plots the number of documents, containing each field.'
 
 Keywords: plot, graphical representation, data visualization, text mining, statistics
 
@@ -10,6 +12,10 @@ See also: YAMLnumbchars
 
 Author: Anastasia Stepanchenko
 
-Submitted: 
+Submitted: 04.07.2016 by Lukas Borke
 
 Datafiles: yamlQN.RData
+
+Example:
+- number of char symbols of all different fields in a given document
+- number of char symbols of all different fields in the data set

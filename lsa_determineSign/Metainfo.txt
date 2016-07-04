@@ -1,0 +1,18 @@
+Name of QuantLet: lsa_determineSign
+
+Published in: 'GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach'
+
+Description: 'Determines the proper sign of LSA components rotation and extracts the top words for YAML text corpus.
+The (positive and accordingly negative) part is chosen from those terms, where the biggest subtotal is concentrated. 
+At the end top 3 words are taken, the sign is always changed to +, their values are multiplied by the singular value 
+for the proper scaling and then rounded. Returns a list.'
+
+Keywords: text mining, svd, singular value, cluster-analysis, clustering
+
+See also: lsa_heatmapsvd, lsa_heatmaperr
+
+Author: Lukas Borke, Anastasia Stepanchenko
+
+Submitted: 04.07.2016 by Lukas Borke
+
+Datafiles: YAML_lsa.RData

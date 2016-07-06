@@ -3,8 +3,8 @@ Name of QuantLet: YAMLcentroids
 
 Published in: 'GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach'
 
-Description: 'Plots MDS representation of k-medoids clustering with clusterlabeling via the most frequent 
-terms of cluster centroids for LSA model of YAML text corpus and gives some cluster info.'
+Description: 'Plots MDS representation of k-medoids clustering with cluster labeling via the most frequent 
+terms of cluster centroids for the LSA model of YAML text corpus and gives some cluster info.'
 
 Keywords: plot, graphical representation, data visualization, text mining, svd, MDS, cluster-analysis, clustering
 

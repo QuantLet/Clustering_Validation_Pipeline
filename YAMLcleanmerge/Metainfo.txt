@@ -3,8 +3,8 @@ Name of QuantLet: YAMLcleanmerge
 
 Published in: 'GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach'
 
-Description: 'Cleanes YAML text corpus containing Quantnet metainfo.txt files from empty fields, 
-merges similar fields and plots the number of documents, containing each field.'
+Description: 'Cleans YAML text corpus containing Quantnet metainfo.txt files from empty fields, 
+merges similar fields and plots the number of documents containing each field.'
 
 Keywords: plot, graphical representation, data visualization, text mining, statistics
 

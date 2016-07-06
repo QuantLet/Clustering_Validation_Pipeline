@@ -17,4 +17,4 @@ Datafiles: yamlQN.RData
 
 Example:
 - Number of char symbols of all different fields in a given document
-- Number of char symbols of all different fields in the dataset
+- Number of char symbols of all different fields in the data set

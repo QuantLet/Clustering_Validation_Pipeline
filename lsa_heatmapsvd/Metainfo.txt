@@ -3,7 +3,7 @@ Name of QuantLet: lsa_heatmapsvd
 
 Published in: 'GitHub-API-Driven Clustering with 5-level Text Mining Validation Pipeline: R based Approach'
 
-Description: Plots heatmaps of the SVD and the weights of singular values for the LSA model of YAML text corpus.
+Description: Plots heatmaps of the SVD components and weights of the singular values for the LSA model of YAML text corpus.
 
 Keywords: plot, graphical representation, data visualization, heat-map, text mining, svd, singular value
 
@@ -20,4 +20,4 @@ Example:
 - heatmap of the U matrix
 - heatmap of the diagonal matrix
 - heatmap of the transposed V matrix
-- the weights of singular values
+- weights of the singular values
